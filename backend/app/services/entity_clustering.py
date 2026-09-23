@@ -22,6 +22,9 @@ from app.services.graph import GraphService
 from app.services.artifacts import load_artifact, save_artifact
 
 
+PRODUCTION_DATASET_VERSION = "1.0.0"
+
+
 @dataclass(frozen=True)
 class GraphAwareConfig:
     eps: float = 1.45
@@ -61,18 +64,46 @@ class EntityClusteringService:
 
     def get(self, version: str | None = None, force: bool = False) -> dict[str, Any]:
         with self._lock:
-            state = analysis_service.get_state()
-            dataset_version = version or state.dataset_version
-            if not force and self._result is not None and self._dataset_version == dataset_version:
+            dataset_version = (
+                version
+                or self._dataset_version
+                or PRODUCTION_DATASET_VERSION
+            )
+
+            if (
+                not force
+                and self._result is not None
+                and self._dataset_version == dataset_version
+            ):
                 return self._result
+
+            # Read the completed persisted artifact first. This is important
+            # for production deployments where the local analysis runtime
+            # state is intentionally not restored.
             if not force:
-                disk = load_artifact(dataset_version, "phase3_graph_clusters")
+                disk = load_artifact(
+                    dataset_version,
+                    "phase3_graph_clusters",
+                )
                 if disk is not None:
                     self._dataset_version = dataset_version
                     self._result = disk
                     return disk
-            result = self._calculate(state.wallet_features, dataset_version)
-            save_artifact(dataset_version, "phase3_graph_clusters", result)
+
+            # Only local analysis/recalculation should reach this point.
+            state = analysis_service.get_state()
+            dataset_version = version or state.dataset_version
+
+            result = self._calculate(
+                state.wallet_features,
+                dataset_version,
+            )
+            save_artifact(
+                dataset_version,
+                "phase3_graph_clusters",
+                result,
+            )
+
             self._dataset_version = dataset_version
             self._result = result
             return result

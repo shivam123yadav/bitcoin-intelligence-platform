@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import threading
 from typing import Any
 
+import numpy as np
 import pandas as pd
 
 from app.services.analysis import analysis_service
@@ -12,6 +13,9 @@ from app.services.lead_fusion_v2 import lead_fusion_v2
 from app.services.lead_validation_v2 import lead_validation_v2
 from app.services.pattern_refinement_v2 import pattern_refinement_v2
 from app.services.artifacts import load_artifact, save_artifact
+
+
+PRODUCTION_DATASET_VERSION = "1.0.0"
 
 
 def _safe_seq(value: Any) -> list[Any]:
@@ -46,31 +50,44 @@ class LeadExplainabilityV2:
         self._graph = GraphService()
 
     def get(self, force: bool = False) -> dict[str, Any]:
-        state = analysis_service.get_state()
-        version = state.dataset_version
+        # Production deployment does not have the local analysis runtime.
+        # Load the completed Phase 5C artifact directly for normal requests.
+        version = PRODUCTION_DATASET_VERSION
+
         with self._lock:
             if not force and version in self._cache:
                 return self._cache[version]
+
+        # Normal read-only requests must use the completed artifact instead
+        # of triggering the expensive Phase 4/5 analysis chain.
         if not force:
             disk = load_artifact(version, "phase5c")
             if disk is not None:
                 with self._lock:
                     self._cache[version] = disk
                 return disk
+
+        # Explicit force/local analysis can use the runtime analysis state.
+        state = analysis_service.get_state()
+        version = state.dataset_version
+
+        if not force:
+            disk = load_artifact(version, "phase5c")
+            if disk is not None:
+                with self._lock:
+                    self._cache[version] = disk
+                return disk
+
         try:
             result = self._run(state)
         except Exception as exc:
-            # A read-only dashboard request must never trigger a 48k-row
-            # recomputation or take the API down when older Phase 4/5 artifacts
-            # are absent.  Older SIH runs contain the completed wallet/IP
-            # materializations but may predate the Phase 5 artifact store.
-            # Build a deterministic compatibility result from those persisted
-            # feature rows instead.  An explicit analysis run can regenerate
-            # the full Phase 4/5 chain later.
             result = self._legacy_fallback(state, str(exc))
+
         save_artifact(version, "phase5c", result)
+
         with self._lock:
             self._cache[version] = result
+
         return result
 
     def _legacy_fallback(self, state: Any, reason: str) -> dict[str, Any]:
@@ -824,3 +841,4 @@ class LeadExplainabilityV2:
 
 
 lead_explainability_v2 = LeadExplainabilityV2()
+
