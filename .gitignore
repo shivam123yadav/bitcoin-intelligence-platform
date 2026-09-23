@@ -1,0 +1,69 @@
+# =========================
+# Python
+# =========================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs / temporary files
+# =========================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+
+# =========================
+# Python build artifacts
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Backend runtime / generated data
+# =========================
+backend/data/runtime/
+backend/data/runs/
+backend/data/cache/
+
+# =========================
+# Local test artifacts
+# =========================
+coverage/
+htmlcov/
+.pytest_cache/

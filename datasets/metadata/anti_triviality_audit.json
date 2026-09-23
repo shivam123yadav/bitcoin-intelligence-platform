@@ -1,0 +1,43 @@
+{
+  "audit_scope": "ground_truth_only",
+  "note": "This artifact is for generator tuning only and is never a runtime feature.",
+  "single_feature_audit": [
+    {
+      "background_mean": 1.4413447432762836,
+      "feature": "input_count",
+      "scenario_mean": 1.341549295774648,
+      "standardized_mean_difference": 0.07941431778561475
+    },
+    {
+      "background_mean": 1.3511491442542787,
+      "feature": "output_count",
+      "scenario_mean": 1.833943661971831,
+      "standardized_mean_difference": 0.44008712485896995
+    },
+    {
+      "background_mean": 0.7724133360533006,
+      "feature": "amount_sum",
+      "scenario_mean": 9.300536722539437,
+      "standardized_mean_difference": 1.3290274287501507
+    },
+    {
+      "background_mean": 2.266407872860636e-05,
+      "feature": "fee",
+      "scenario_mean": 0.0048956478676056335,
+      "standardized_mean_difference": 0.5866318449067459
+    },
+    {
+      "background_mean": 33241.32261613692,
+      "feature": "src_port",
+      "scenario_mean": 33185.25070422535,
+      "standardized_mean_difference": 0.003010738201322271
+    },
+    {
+      "background_mean": 9653.700562347189,
+      "feature": "dst_port",
+      "scenario_mean": 9639.96338028169,
+      "standardized_mean_difference": 0.004060061548114125
+    }
+  ],
+  "status": "PASS_WITH_REVIEW"
+}

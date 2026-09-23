@@ -1,0 +1,61 @@
+{
+  "canonical_fields": [
+    "timestamp",
+    "src_ip",
+    "dst_ip",
+    "src_port",
+    "dst_port",
+    "txid",
+    "input_addresses",
+    "output_addresses",
+    "input_amounts",
+    "output_amounts",
+    "fee",
+    "script_type",
+    "geo_country",
+    "asn",
+    "source_record_id"
+  ],
+  "config_version": "1",
+  "dataset_version": "1.0.0",
+  "generator_version": "0.1.0",
+  "ground_truth_files": [
+    "scenario_labels.csv",
+    "entity_labels.csv",
+    "instance_catalog.csv",
+    "ip_geo_mapping.csv"
+  ],
+  "ip_pool_count": 3800,
+  "master_seed": 26146,
+  "observed_asn_count": 90,
+  "observed_country_count": 45,
+  "output_hashes": {
+    "entity_labels.csv": "8c16172efc563b7eb5b3f56b049cac3fc18f4c07df47da283e060bbf1856de78",
+    "generator_config.json": "c050a7cb5c5b33f0bb9b838e2e6072d6ff68a0e5766d3d653581dca00b218a04",
+    "instance_catalog.csv": "0a9cb361d18e2fd5c9143128d541308de9048b2259b3645494ca3db274d444bb",
+    "ip_geo_mapping.csv": "12eeb4444d8dd51ef5bac21f8940ff6f8683d8a77367caee838ba81485275d71",
+    "sample_records_v1.0.0.json": "b95819e92f0b786d5bb3a42619dafa7395670e7b4bc47c4eb999605077236839",
+    "scenario_labels.csv": "03b367d03509e5166bfd6beb18730b882dd35df21497cfa362918d5c359f85e9",
+    "synthetic_traffic_v1.0.0.csv": "8a1985f91efacd367502d5ac964a4e623b428f9a4fddc168b41f7b714c5bb006",
+    "synthetic_traffic_v1.0.0.ndjson": "332f3c20dd2323a1288cf40adc970c7630659bdc71510acf3a4ec5dd446c1dc5"
+  },
+  "record_count": 48000,
+  "scale": "demo",
+  "scenario_instance_count": 85,
+  "scenario_record_counts": {
+    "A": 40900,
+    "B": 2000,
+    "C": 750,
+    "D": 300,
+    "E": 420,
+    "F": 1300,
+    "G": 430,
+    "H": 1900
+  },
+  "schema_version": "1",
+  "time_end": "2024-11-30T23:59:59Z",
+  "time_start": "2024-11-01T00:00:00Z",
+  "unique_txids": 46977,
+  "validation_status": "PASS",
+  "wallet_pool_count": 12000
+}

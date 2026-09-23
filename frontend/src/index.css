@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: theme('colors.ink.700');
+  }
+  html {
+    @apply bg-ink-950 text-ink-100;
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-ink-950 text-ink-100 font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-signal-500/30 text-white;
+  }
+  /* Scrollbars */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-ink-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-600 rounded;
+    border: 2px solid theme('colors.ink.900');
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-500;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-ink-850 border border-ink-700 rounded-lg shadow-panel;
+  }
+  .panel-header {
+    @apply flex items-center justify-between px-4 py-3 border-b border-ink-700;
+  }
+  .panel-title {
+    @apply text-sm font-semibold text-ink-100 tracking-tight;
+  }
+  .panel-subtitle {
+    @apply text-xs text-ink-300;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-150 select-none;
+  }
+  .btn-primary {
+    @apply btn bg-signal-500 text-white hover:bg-signal-600 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply btn bg-ink-700 text-ink-100 hover:bg-ink-600 border border-ink-600;
+  }
+  .btn-ghost {
+    @apply btn text-ink-300 hover:text-ink-100 hover:bg-ink-700/60;
+  }
+  .btn-danger {
+    @apply btn bg-critical-500 text-white hover:bg-critical-600;
+  }
+  .input {
+    @apply bg-ink-800 border border-ink-600 rounded-md px-3 py-1.5 text-sm text-ink-100 placeholder-ink-400 focus:outline-none focus:border-signal-500 focus:ring-1 focus:ring-signal-500/40 transition-colors;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 text-2xs font-semibold rounded uppercase tracking-wide;
+  }
+  .badge-high {
+    @apply badge bg-critical-500/15 text-critical-400 border border-critical-500/30;
+  }
+  .badge-medium {
+    @apply badge bg-warn-500/15 text-warn-400 border border-warn-500/30;
+  }
+  .badge-low {
+    @apply badge bg-signal-500/15 text-signal-400 border border-signal-500/30;
+  }
+  .badge-ok {
+    @apply badge bg-ok-500/15 text-ok-400 border border-ok-500/30;
+  }
+  .badge-intel {
+    @apply badge bg-intel-500/15 text-intel-400 border border-intel-500/30;
+  }
+  .badge-ml {
+    @apply badge bg-ml-500/15 text-ml-400 border border-ml-500/30;
+  }
+  .badge-neutral {
+    @apply badge bg-ink-700 text-ink-300 border border-ink-600;
+  }
+  .stat-label {
+    @apply text-2xs font-medium text-ink-300 uppercase tracking-wider;
+  }
+  .stat-value {
+    @apply text-2xl font-semibold text-ink-100 tabular-nums tracking-tight;
+  }
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2 text-sm text-ink-300 rounded-md transition-all duration-150 cursor-pointer hover:bg-ink-700/50 hover:text-ink-100;
+  }
+  .nav-item-active {
+    @apply bg-signal-500/10 text-signal-400 border-l-2 border-signal-500;
+  }
+  .table-row-hover {
+    @apply transition-colors duration-100 hover:bg-ink-700/40;
+  }
+  .mono {
+    @apply font-mono text-xs;
+  }
+  .divider {
+    @apply h-px bg-ink-700;
+  }
+  .skeleton {
+    @apply bg-gradient-to-r from-ink-800 via-ink-750 to-ink-800 bg-[length:1000px_100%] animate-shimmer rounded;
+  }
+  .focus-ring {
+    @apply focus:outline-none focus:ring-1 focus:ring-signal-500/50 focus:border-signal-500;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .grid-canvas {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}

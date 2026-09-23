@@ -1,0 +1,655 @@
+[
+  {
+    "timestamp": "2024-11-01T00:00:00Z",
+    "src_ip": "192.0.2.179",
+    "dst_ip": "10.20.11.138",
+    "src_port": 64059,
+    "dst_port": 8333,
+    "txid": "276862487c316161c5f26b7fc9683c44f60b51901779117e81daa7f24e4b0794",
+    "input_addresses": [
+      "bc1qgkqtmyejs7nhhp5hl35v8hfjfr3k80cfs2ljt9",
+      "bc1qv2uay8u7k7zq3gg6audtfuaxj7zav45fag8zqf",
+      "bc1qcn26fxkuq6w78uc3t3amp7288rrfwum3s7va25"
+    ],
+    "output_addresses": [
+      "bc1qqylgl75dlsu03hsp4445722u4uav64nr00u04c"
+    ],
+    "input_amounts": [
+      "0.11565763",
+      "4.75471060",
+      "2.58989019"
+    ],
+    "output_amounts": [
+      "7.46024214"
+    ],
+    "fee": "0.00001628",
+    "script_type": "P2WPKH",
+    "geo_country": "ZA",
+    "asn": "AS64535 Synthetic ZA Transit Cooperative 2",
+    "source_record_id": "R00000001"
+  },
+  {
+    "timestamp": "2024-11-01T00:00:00Z",
+    "src_ip": "10.20.4.3",
+    "dst_ip": "10.20.7.188",
+    "src_port": 45705,
+    "dst_port": 8333,
+    "txid": "2f121cf21948658dc8a4064972b15f34078b72347517c03f37865051793a908a",
+    "input_addresses": [
+      "bc1qg0n0kx3adwz8hd8a6v7tp3dvf92s4jvjgmtth7",
+      "bc1qyd5zc57dcr97e7qzcsh83xufdn4jctnmk5ue3x",
+      "bc1qalut9mdezaqvf57ywpm09ckes8r9wdk9g2su75"
+    ],
+    "output_addresses": [
+      "bc1qnpg8vwk570l3h6dg0acfxaz85yrrnxc6g7l4ch"
+    ],
+    "input_amounts": [
+      "2.09176436",
+      "3.49950695",
+      "2.89706826"
+    ],
+    "output_amounts": [
+      "8.48830408"
+    ],
+    "fee": "0.00003549",
+    "script_type": "P2WPKH",
+    "geo_country": "ID",
+    "asn": "AS64565 Synthetic ID Transit Cooperative 2",
+    "source_record_id": "R00000002"
+  },
+  {
+    "timestamp": "2024-11-01T00:00:00Z",
+    "src_ip": "10.20.1.81",
+    "dst_ip": "10.20.10.240",
+    "src_port": 23779,
+    "dst_port": 8333,
+    "txid": "5569c5ce705666e1ca5fadba23a052de4c484ad8458e0ee4fc9f196597c9bf27",
+    "input_addresses": [
+      "bc1qwrf782qfydrv9657nz53vqfva87yzfas84u5ss",
+      "bc1q6vpevsdl3rxqupgd7yh67r2eymq65k0r5hn2wg",
+      "bc1qcjfv5yd8hpdgz94cqanl32afez026zcsprw5sq",
+      "bc1qa87u0rz7pfagkw2p2qlfr083uqengfzuljdwp6",
+      "bc1qfcvc9vrgay4jx9plm56jf0cx346gy3xtdywa8g"
+    ],
+    "output_addresses": [
+      "bc1qwdlrfyz8qq8e39naqcdfy23h8eyj3jp4j9n8l7"
+    ],
+    "input_amounts": [
+      "0.68261068",
+      "4.16522954",
+      "4.41560995",
+      "4.19506362",
+      "2.65506406"
+    ],
+    "output_amounts": [
+      "16.11355024"
+    ],
+    "fee": "0.00002761",
+    "script_type": "P2WPKH",
+    "geo_country": "CH",
+    "asn": "AS64545 Synthetic CH Transit Cooperative 2",
+    "source_record_id": "R00000003"
+  },
+  {
+    "timestamp": "2024-11-01T00:00:13Z",
+    "src_ip": "192.0.2.1",
+    "dst_ip": "192.0.2.233",
+    "src_port": 27904,
+    "dst_port": 8333,
+    "txid": "15f68120065f96e3f2e25b37a760661a2d585aa334a7ee5b7171c04acd5eaf87",
+    "input_addresses": [
+      "bc1qaurtgkznrd6f93zv6vvuzvu9j33qakw7gkfmcg",
+      "bc1q7gwx8sgywzdzydhkn3v9vvglu7048huqecn6zc"
+    ],
+    "output_addresses": [
+      "bc1qqa29yt5wyehqtn9vdsxcqknfumg2cg8d372ny0"
+    ],
+    "input_amounts": [
+      "0.00213319",
+      "0.00010669"
+    ],
+    "output_amounts": [
+      "0.00221557"
+    ],
+    "fee": "0.00002431",
+    "script_type": "P2WSH",
+    "geo_country": "MX",
+    "asn": "AS64574 Synthetic MX Transit Cooperative 1",
+    "source_record_id": "R00000004"
+  },
+  {
+    "timestamp": "2024-11-01T00:00:17Z",
+    "src_ip": "10.20.4.3",
+    "dst_ip": "10.20.4.4",
+    "src_port": 59380,
+    "dst_port": 8333,
+    "txid": "5be2eb1f73de16aa18d7afebdffb6d58b3db30256e8c3553ac2cef34890f2162",
+    "input_addresses": [
+      "bc1qyd5zc57dcr97e7qzcsh83xufdn4jctnmk5ue3x"
+    ],
+    "output_addresses": [
+      "bc1qywfu2lyw6ae2wtvuadz39ft8ermhx63rlyf4vl"
+    ],
+    "input_amounts": [
+      "2.04719828"
+    ],
+    "output_amounts": [
+      "2.04719196"
+    ],
+    "fee": "0.00000632",
+    "script_type": "P2WPKH",
+    "geo_country": "ID",
+    "asn": "AS64565 Synthetic ID Transit Cooperative 2",
+    "source_record_id": "R00000005"
+  },
+  {
+    "timestamp": "2024-11-01T00:01:05Z",
+    "src_ip": "10.20.1.81",
+    "dst_ip": "10.20.10.240",
+    "src_port": 18657,
+    "dst_port": 8333,
+    "txid": "5d71a721c1c6b2eae59afbeb191beaee952445d9af726c81d6f2044a952c5280",
+    "input_addresses": [
+      "bc1q0surhte6p2lytmnexjcjen00t9klhsw5f7c2nq"
+    ],
+    "output_addresses": [
+      "bc1qywfu2lyw6ae2wtvuadz39ft8ermhx63rlyf4vl"
+    ],
+    "input_amounts": [
+      "0.52841438"
+    ],
+    "output_amounts": [
+      "0.52840294"
+    ],
+    "fee": "0.00001144",
+    "script_type": "P2WPKH",
+    "geo_country": "CH",
+    "asn": "AS64545 Synthetic CH Transit Cooperative 2",
+    "source_record_id": "R00000006"
+  },
+  {
+    "timestamp": "2024-11-01T00:01:08Z",
+    "src_ip": "192.0.2.2",
+    "dst_ip": "192.0.2.72",
+    "src_port": 11331,
+    "dst_port": 8333,
+    "txid": "df846df227e6e1b7cd8a4fd0542103c7019a3b9572337df0777fded3cd08ad98",
+    "input_addresses": [
+      "bc1q7gwx8sgywzdzydhkn3v9vvglu7048huqecn6zc"
+    ],
+    "output_addresses": [
+      "bc1qg7cfz47vmpxkdl8x2e4nsvwvwjmmgnuq0w5xsp",
+      "bc1qj0dtjjjrf3xpgs2f8qlwc3klvw9zmtq8esse9e",
+      "bc1q4zgg2j2gp0c649dda3c8a6xl43wu3r266kzrv8"
+    ],
+    "input_amounts": [
+      "0.32783566"
+    ],
+    "output_amounts": [
+      "0.08680699",
+      "0.20790729",
+      "0.03309609"
+    ],
+    "fee": "0.00002529",
+    "script_type": "MultiSig",
+    "geo_country": "CO",
+    "asn": "AS64550 Synthetic CO Transit Cooperative 1",
+    "source_record_id": "R00000007"
+  },
+  {
+    "timestamp": "2024-11-01T00:01:23Z",
+    "src_ip": "192.0.2.179",
+    "dst_ip": "192.0.2.180",
+    "src_port": 6028,
+    "dst_port": 8333,
+    "txid": "e93a746094d9036357adf0f7a53e4daf102e9b7d099df22dadd42e87e6c9620a",
+    "input_addresses": [
+      "bc1qm37j4kat3kwwsjr2y5qygc2y2n4pl6rgf3udsp"
+    ],
+    "output_addresses": [
+      "bc1qgzr2yg7p4m2l4wdjwfuzcw0anhtdlfd79cz3rm"
+    ],
+    "input_amounts": [
+      "1.00303178"
+    ],
+    "output_amounts": [
+      "1.00302408"
+    ],
+    "fee": "0.00000770",
+    "script_type": "P2WPKH",
+    "geo_country": "ZA",
+    "asn": "AS64535 Synthetic ZA Transit Cooperative 2",
+    "source_record_id": "R00000008"
+  },
+  {
+    "timestamp": "2024-11-01T00:01:33Z",
+    "src_ip": "192.0.2.1",
+    "dst_ip": "192.0.2.133",
+    "src_port": 28755,
+    "dst_port": 8333,
+    "txid": "6a04c47ebfaee08afe13d461cc337e82540a615d65ead60fef77eec9a7fbee7c",
+    "input_addresses": [
+      "bc1q7gwx8sgywzdzydhkn3v9vvglu7048huqecn6zc"
+    ],
+    "output_addresses": [
+      "bc1qqz5sc8vv8j3yk2f3pg3h07k6l486868wdd3z8q"
+    ],
+    "input_amounts": [
+      "0.55533490"
+    ],
+    "output_amounts": [
+      "0.55531143"
+    ],
+    "fee": "0.00002347",
+    "script_type": "P2SH",
+    "geo_country": "MX",
+    "asn": "AS64574 Synthetic MX Transit Cooperative 1",
+    "source_record_id": "R00000009"
+  },
+  {
+    "timestamp": "2024-11-01T00:02:40Z",
+    "src_ip": "192.0.2.6",
+    "dst_ip": "10.20.0.1",
+    "src_port": 3250,
+    "dst_port": 8333,
+    "txid": "053d6ac7990a586d94179b6c044fdf9f140a8a988ccef3c1db2f038fa63f824f",
+    "input_addresses": [
+      "bc1q7gwx8sgywzdzydhkn3v9vvglu7048huqecn6zc"
+    ],
+    "output_addresses": [
+      "bc1qs3txrf5t7jhksjsvu2dlf5dtrjq8z277w3sw3w"
+    ],
+    "input_amounts": [
+      "0.03945132"
+    ],
+    "output_amounts": [
+      "0.03942747"
+    ],
+    "fee": "0.00002385",
+    "script_type": "P2WPKH",
+    "geo_country": "SG",
+    "asn": "AS64531 Synthetic SG Transit Cooperative 2",
+    "source_record_id": "R00000010"
+  },
+  {
+    "timestamp": "2024-11-01T00:02:55Z",
+    "src_ip": "10.20.1.81",
+    "dst_ip": "10.20.10.240",
+    "src_port": 59167,
+    "dst_port": 8333,
+    "txid": "eada954bd347f5bd0e387d397bb87bc7ca65a1447aef1179e47f7ef62898f0c4",
+    "input_addresses": [
+      "bc1q6vpevsdl3rxqupgd7yh67r2eymq65k0r5hn2wg"
+    ],
+    "output_addresses": [
+      "bc1q0gew8wunha5zlnk0eg2pxlt289lk27kxv79awn"
+    ],
+    "input_amounts": [
+      "1.03408268"
+    ],
+    "output_amounts": [
+      "1.03406661"
+    ],
+    "fee": "0.00001607",
+    "script_type": "P2WPKH",
+    "geo_country": "CH",
+    "asn": "AS64545 Synthetic CH Transit Cooperative 2",
+    "source_record_id": "R00000011"
+  },
+  {
+    "timestamp": "2024-11-01T00:03:01Z",
+    "src_ip": "192.0.2.9",
+    "dst_ip": "10.20.11.187",
+    "src_port": 10734,
+    "dst_port": 8333,
+    "txid": "8cda751c51e2c2ca53a37efe34aa7ae35ab3192edab1a2e7e6a9062c460265d6",
+    "input_addresses": [
+      "bc1qj0dtjjjrf3xpgs2f8qlwc3klvw9zmtq8esse9e"
+    ],
+    "output_addresses": [
+      "bc1qq8caz8mr63mv4sc94m7cdwpxuff6gpkq6gnl82"
+    ],
+    "input_amounts": [
+      "0.00317584"
+    ],
+    "output_amounts": [
+      "0.00314899"
+    ],
+    "fee": "0.00002685",
+    "script_type": "MultiSig",
+    "geo_country": "BE",
+    "asn": "AS64542 Synthetic BE Transit Cooperative 1",
+    "source_record_id": "R00000012"
+  },
+  {
+    "timestamp": "2024-11-01T00:03:17Z",
+    "src_ip": "10.20.11.138",
+    "dst_ip": "10.20.11.139",
+    "src_port": 26376,
+    "dst_port": 8333,
+    "txid": "9c476e406411953fd8538c2ec1df81f1bfec2245d104b588e1e7eb62deeda8f2",
+    "input_addresses": [
+      "bc1q0yj6mvanggzydfju5p9r25wmmyhwmfetpgs4vt"
+    ],
+    "output_addresses": [
+      "bc1q75afqgezaf5c3wvvfv4p6wh733575txysk4stl"
+    ],
+    "input_amounts": [
+      "0.14490064"
+    ],
+    "output_amounts": [
+      "0.14488143"
+    ],
+    "fee": "0.00001921",
+    "script_type": "P2WPKH",
+    "geo_country": "AR",
+    "asn": "AS64539 Synthetic AR Transit Cooperative 2",
+    "source_record_id": "R00000013"
+  },
+  {
+    "timestamp": "2024-11-01T00:04:10Z",
+    "src_ip": "10.20.7.188",
+    "dst_ip": "10.20.10.133",
+    "src_port": 34738,
+    "dst_port": 8333,
+    "txid": "ec30d105fca88f8978d3481d2b49e0dca9d863e0314a3e852c794739b3c2a55d",
+    "input_addresses": [
+      "bc1qzl9ggj44a76037mux4hvqzqyhjak9r959xn2dj"
+    ],
+    "output_addresses": [
+      "bc1qpuxv44dnx8dxu7dwyvk6um0u9qe0qptf83mmte"
+    ],
+    "input_amounts": [
+      "0.45242520"
+    ],
+    "output_amounts": [
+      "0.45241709"
+    ],
+    "fee": "0.00000811",
+    "script_type": "P2WPKH",
+    "geo_country": "AE",
+    "asn": "AS64536 Synthetic AE Transit Cooperative 1",
+    "source_record_id": "R00000014"
+  },
+  {
+    "timestamp": "2024-11-01T00:05:46Z",
+    "src_ip": "10.20.10.240",
+    "dst_ip": "10.20.1.81",
+    "src_port": 23176,
+    "dst_port": 8333,
+    "txid": "d386396ef281d3fa88045a01872bf079acc204cc2a9110b1d298830798e7c2f0",
+    "input_addresses": [
+      "bc1qm9de3wjkm9sndjsddsxxrt4sxzshhjdsmuk0c9"
+    ],
+    "output_addresses": [
+      "bc1qywfu2lyw6ae2wtvuadz39ft8ermhx63rlyf4vl"
+    ],
+    "input_amounts": [
+      "2.38821372"
+    ],
+    "output_amounts": [
+      "2.38820238"
+    ],
+    "fee": "0.00001134",
+    "script_type": "P2WPKH",
+    "geo_country": "NZ",
+    "asn": "AS64581 Synthetic NZ Transit Cooperative 2",
+    "source_record_id": "R00000015"
+  },
+  {
+    "timestamp": "2024-11-01T00:06:58Z",
+    "src_ip": "10.20.7.188",
+    "dst_ip": "10.20.4.3",
+    "src_port": 51028,
+    "dst_port": 18332,
+    "txid": "6e0d5f15c232f64c6f056b6439be5aa3d8a154b9e93c2df1e521f1aa13fcc71e",
+    "input_addresses": [
+      "bc1qalut9mdezaqvf57ywpm09ckes8r9wdk9g2su75"
+    ],
+    "output_addresses": [
+      "bc1qywfu2lyw6ae2wtvuadz39ft8ermhx63rlyf4vl"
+    ],
+    "input_amounts": [
+      "1.61694274"
+    ],
+    "output_amounts": [
+      "1.61693514"
+    ],
+    "fee": "0.00000760",
+    "script_type": "P2WPKH",
+    "geo_country": "AE",
+    "asn": "AS64536 Synthetic AE Transit Cooperative 1",
+    "source_record_id": "R00000016"
+  },
+  {
+    "timestamp": "2024-11-01T00:07:10Z",
+    "src_ip": "192.0.2.179",
+    "dst_ip": "10.20.11.138",
+    "src_port": 26445,
+    "dst_port": 18332,
+    "txid": "afca56705cbb5c231ab4a435b65d9ffbb28cd6cb81d4677c970b9751a2fad581",
+    "input_addresses": [
+      "bc1q0gew8wunha5zlnk0eg2pxlt289lk27kxv79awn"
+    ],
+    "output_addresses": [
+      "bc1qgkqtmyejs7nhhp5hl35v8hfjfr3k80cfs2ljt9"
+    ],
+    "input_amounts": [
+      "1.88464881"
+    ],
+    "output_amounts": [
+      "1.88462992"
+    ],
+    "fee": "0.00001889",
+    "script_type": "P2WPKH",
+    "geo_country": "ZA",
+    "asn": "AS64535 Synthetic ZA Transit Cooperative 2",
+    "source_record_id": "R00000017"
+  },
+  {
+    "timestamp": "2024-11-01T00:09:49Z",
+    "src_ip": "10.20.11.138",
+    "dst_ip": "10.20.11.139",
+    "src_port": 2529,
+    "dst_port": 8333,
+    "txid": "cd15fc25d5eb9648635a52d4a911d1c54c9031c1c5b87f3e62cdc5ec4775fae3",
+    "input_addresses": [
+      "bc1qvfzxyu29563lgm0tl8znc38ac3gkhtteqhyuk6"
+    ],
+    "output_addresses": [
+      "bc1qzl9ggj44a76037mux4hvqzqyhjak9r959xn2dj"
+    ],
+    "input_amounts": [
+      "0.87934347"
+    ],
+    "output_amounts": [
+      "0.87932807"
+    ],
+    "fee": "0.00001540",
+    "script_type": "P2WPKH",
+    "geo_country": "AR",
+    "asn": "AS64539 Synthetic AR Transit Cooperative 2",
+    "source_record_id": "R00000018"
+  },
+  {
+    "timestamp": "2024-11-01T00:09:51Z",
+    "src_ip": "10.20.1.81",
+    "dst_ip": "10.20.1.82",
+    "src_port": 32395,
+    "dst_port": 8333,
+    "txid": "e48e201e94fddf3bb5ecfe7c886e16db71bd28c324ed04d9f2a42a3a3d289d38",
+    "input_addresses": [
+      "bc1qhu9h42nwf7zjr0u533zqrpaya8zu8t8tllm8wf"
+    ],
+    "output_addresses": [
+      "bc1qywfu2lyw6ae2wtvuadz39ft8ermhx63rlyf4vl"
+    ],
+    "input_amounts": [
+      "0.52180478"
+    ],
+    "output_amounts": [
+      "0.52178879"
+    ],
+    "fee": "0.00001599",
+    "script_type": "P2WPKH",
+    "geo_country": "CH",
+    "asn": "AS64545 Synthetic CH Transit Cooperative 2",
+    "source_record_id": "R00000019"
+  },
+  {
+    "timestamp": "2024-11-01T00:10:06Z",
+    "src_ip": "10.20.10.133",
+    "dst_ip": "10.20.7.188",
+    "src_port": 24764,
+    "dst_port": 8333,
+    "txid": "312b054024422f7d1969e97a1ca9ab0f472019a0e61966b379863fd329fba00e",
+    "input_addresses": [
+      "bc1qvfzxyu29563lgm0tl8znc38ac3gkhtteqhyuk6"
+    ],
+    "output_addresses": [
+      "bc1qclu5kw4sgnef46tvst0qp8vxut22uvz8jg0us0"
+    ],
+    "input_amounts": [
+      "1.15892405"
+    ],
+    "output_amounts": [
+      "1.15891352"
+    ],
+    "fee": "0.00001053",
+    "script_type": "P2WPKH",
+    "geo_country": "ID",
+    "asn": "AS64564 Synthetic ID Transit Cooperative 1",
+    "source_record_id": "R00000020"
+  },
+  {
+    "timestamp": "2024-11-01T00:11:49Z",
+    "src_ip": "192.0.2.7",
+    "dst_ip": "10.20.8.230",
+    "src_port": 33738,
+    "dst_port": 8333,
+    "txid": "b4284d8456a6ea9c7a4b28aa6628a1b49a7d7752b79e04c7bacaf919003fcdbc",
+    "input_addresses": [
+      "bc1qqa29yt5wyehqtn9vdsxcqknfumg2cg8d372ny0"
+    ],
+    "output_addresses": [
+      "bc1q676wnpn0lr2tuymzsp39yat9gz22hhpc9509fm"
+    ],
+    "input_amounts": [
+      "0.09725155"
+    ],
+    "output_amounts": [
+      "0.09723074"
+    ],
+    "fee": "0.00002081",
+    "script_type": "P2SH",
+    "geo_country": "RO",
+    "asn": "AS64587 Synthetic RO Transit Cooperative 2",
+    "source_record_id": "R00000021"
+  },
+  {
+    "timestamp": "2024-11-01T00:11:56Z",
+    "src_ip": "192.0.2.1",
+    "dst_ip": "192.0.2.55",
+    "src_port": 35037,
+    "dst_port": 18332,
+    "txid": "2effe29093d8d6517b6d7ca19c6c66a19e4099aab77fd2452f05490953760f86",
+    "input_addresses": [
+      "bc1q7gwx8sgywzdzydhkn3v9vvglu7048huqecn6zc",
+      "bc1qf3k2a5yc5qlshd2mdqjhttnqcgr0vpp8qr8ghs",
+      "bc1qxy88hfww9dthe0342jp8v2px30z9kvngd6ptcd"
+    ],
+    "output_addresses": [
+      "bc1qk3x2ga93mk3jrpn8nfs79he8fjx290pgt74wjm"
+    ],
+    "input_amounts": [
+      "0.00289936",
+      "0.00109515",
+      "0.00420809"
+    ],
+    "output_amounts": [
+      "0.00814863"
+    ],
+    "fee": "0.00005397",
+    "script_type": "P2PKH",
+    "geo_country": "MX",
+    "asn": "AS64574 Synthetic MX Transit Cooperative 1",
+    "source_record_id": "R00000022"
+  },
+  {
+    "timestamp": "2024-11-01T00:12:04Z",
+    "src_ip": "192.0.2.1",
+    "dst_ip": "198.51.100.222",
+    "src_port": 5438,
+    "dst_port": 8333,
+    "txid": "9857c3b2d67e9663346d13172a0a360cc550aaba9fd44866c6a572fa5fe9ff07",
+    "input_addresses": [
+      "bc1qpm5u88drqaue824as55fxrrq9jujcxq6nfmjup"
+    ],
+    "output_addresses": [
+      "bc1qy3l3j67kmzgrht496kgduq73jfltwdrfpsn8l3",
+      "bc1qmnft36xxkv2j5a0wyqz09fhxxrmfwmnsj54zv6"
+    ],
+    "input_amounts": [
+      "0.00246113"
+    ],
+    "output_amounts": [
+      "0.00024289",
+      "0.00218252"
+    ],
+    "fee": "0.00003572",
+    "script_type": "P2PKH",
+    "geo_country": "MX",
+    "asn": "AS64574 Synthetic MX Transit Cooperative 1",
+    "source_record_id": "R00000023"
+  },
+  {
+    "timestamp": "2024-11-01T00:12:10Z",
+    "src_ip": "10.20.11.138",
+    "dst_ip": "192.0.2.179",
+    "src_port": 38690,
+    "dst_port": 8333,
+    "txid": "2008a71144990411cc2d90967a060dd3ef29ca755ba332759863fa63a243c167",
+    "input_addresses": [
+      "bc1q8ceale9qzqqllcwr9ht7zm5pu60tpvmwza7qas"
+    ],
+    "output_addresses": [
+      "bc1q74894g8p232rshflz6wwnlnnk6ff0e9e93r9p6"
+    ],
+    "input_amounts": [
+      "2.32815377"
+    ],
+    "output_amounts": [
+      "2.32813460"
+    ],
+    "fee": "0.00001917",
+    "script_type": "P2WPKH",
+    "geo_country": "AR",
+    "asn": "AS64539 Synthetic AR Transit Cooperative 2",
+    "source_record_id": "R00000024"
+  },
+  {
+    "timestamp": "2024-11-01T00:12:23Z",
+    "src_ip": "10.20.1.81",
+    "dst_ip": "10.20.1.82",
+    "src_port": 12626,
+    "dst_port": 8333,
+    "txid": "bc0eaac367e9acd903d3111c53f6124a3a4829e4038c5410057e94ea735b312d",
+    "input_addresses": [
+      "bc1qa90j5wv76umy0fxk48n0auv3l7yfzmt8rw4k9e"
+    ],
+    "output_addresses": [
+      "bc1qywfu2lyw6ae2wtvuadz39ft8ermhx63rlyf4vl"
+    ],
+    "input_amounts": [
+      "1.07054105"
+    ],
+    "output_amounts": [
+      "1.07052883"
+    ],
+    "fee": "0.00001222",
+    "script_type": "P2WPKH",
+    "geo_country": "CH",
+    "asn": "AS64545 Synthetic CH Transit Cooperative 2",
+    "source_record_id": "R00000025"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "instance_count": 85,
+  "manifest_record_count": 48000,
+  "record_counts": {
+    "A": 40900,
+    "B": 2000,
+    "C": 750,
+    "D": 300,
+    "E": 420,
+    "F": 1300,
+    "G": 430,
+    "H": 1900
+  }
+}

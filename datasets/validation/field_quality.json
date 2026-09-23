@@ -1,0 +1,47 @@
+{
+  "asn": {
+    "present": 48000
+  },
+  "dst_ip": {
+    "present": 48000
+  },
+  "dst_port": {
+    "present": 48000
+  },
+  "fee": {
+    "present": 48000
+  },
+  "geo_country": {
+    "present": 48000
+  },
+  "input_addresses": {
+    "present": 48000
+  },
+  "input_amounts": {
+    "present": 48000
+  },
+  "output_addresses": {
+    "present": 48000
+  },
+  "output_amounts": {
+    "present": 48000
+  },
+  "script_type": {
+    "present": 48000
+  },
+  "source_record_id": {
+    "present": 48000
+  },
+  "src_ip": {
+    "present": 48000
+  },
+  "src_port": {
+    "present": 48000
+  },
+  "timestamp": {
+    "present": 48000
+  },
+  "txid": {
+    "present": 48000
+  }
+}

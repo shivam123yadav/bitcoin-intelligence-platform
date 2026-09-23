@@ -1,0 +1,50 @@
+{
+  "canonical_fields": [
+    "timestamp",
+    "src_ip",
+    "dst_ip",
+    "src_port",
+    "dst_port",
+    "txid",
+    "input_addresses",
+    "output_addresses",
+    "input_amounts",
+    "output_amounts",
+    "fee",
+    "script_type",
+    "geo_country",
+    "asn",
+    "source_record_id"
+  ],
+  "config_version": "1",
+  "dataset_version": "1.0.0",
+  "generator_version": "0.1.0",
+  "master_seed": 26146,
+  "plan": {
+    "days": 30,
+    "families": {
+      "A": 40900,
+      "B": 2000,
+      "C": 750,
+      "D": 300,
+      "E": 420,
+      "F": 1300,
+      "G": 430,
+      "H": 1900
+    },
+    "instances": {
+      "B": 14,
+      "C": 12,
+      "D": 15,
+      "E": 8,
+      "F": 20,
+      "G": 10,
+      "H": 6
+    },
+    "ips": 3800,
+    "records": 48000,
+    "wallets": 12000
+  },
+  "scale": "demo",
+  "schema_version": "1"
+}
