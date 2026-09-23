@@ -1,22 +1,32 @@
 from fastapi import APIRouter, HTTPException
+
 from app.services.analysis import AnalysisError, analysis_service
 
-router=APIRouter(prefix='/api/v1/analysis')
+router = APIRouter(prefix="/api/v1/analysis")
 
-@router.get('/stages')
-def stages(): return analysis_service.status()['stages']
 
-@router.get('/result')
+@router.get("/stages")
+def stages():
+    return analysis_service.status()["stages"]
+
+
+@router.get("/result")
 def result():
-    try: return analysis_service.get_state().summary | {'stages':analysis_service.get_state().stages}
-    except AnalysisError as e: raise HTTPException(500,str(e)) from e
+    try:
+        return analysis_service.result()
+    except AnalysisError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
 
-@router.post('/run')
+
+@router.post("/run")
 def run():
     try:
-        s=analysis_service.run(force=True)
-        return s.stages
-    except AnalysisError as e: raise HTTPException(500,str(e)) from e
+        state = analysis_service.run(force=True)
+        return state.stages
+    except AnalysisError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
 
-@router.get('/status')
-def status(): return analysis_service.status()
+
+@router.get("/status")
+def status():
+    return analysis_service.status()
